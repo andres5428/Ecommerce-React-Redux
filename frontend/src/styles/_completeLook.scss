@@ -1,0 +1,263 @@
+$banner-background-color: #7a4a58;
+$banner-text-color: #fdfcfc;
+main {
+    & .down-section {
+        margin-left: 2rem;
+        & .complete-look-title {
+            color: $banner-background-color;
+            margin: 1rem 0 1rem 0;
+            padding: 0.2rem;
+            background-color: #e7e6e2;
+        }
+        & .complete-look-products-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: flex-end;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 0 2rem 1rem 1rem;
+            & .product {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 6rem;
+                    height: 6rem;
+                }
+                & .product-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & .image-gallery {
+                        display: flex;
+                        justify-content: center;
+                        // width: 20%;
+                        & > img {
+                            width: 20%;
+                        }
+                    }
+
+                    & .shoe-name {
+                        color: $banner-background-color;
+                        font-size: 0.8rem;
+                        margin-top: 1rem;
+                        font-weight: 500;
+                    }
+                    & .shoe-price {
+                        color: $banner-background-color;
+                        padding: 1rem;
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                        margin-top: 0rem;
+                    }
+                    & .shoe-addto-cart {
+                        padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+                        background-color: $banner-background-color;
+                        color: $banner-text-color;
+                        border: none;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        & > a {
+                            text-decoration: none;
+                            color: $banner-text-color;
+                            height: auto;
+                            text-align: center;
+                            font-weight: 600;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .recommended-products-title {
+            color: $banner-background-color;
+            border-bottom: solid 1px $banner-background-color;
+            margin: 2rem 0 1rem 0;
+        }
+        & .recommended-products-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: end;
+            justify-items: center;
+            & .product {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 6rem;
+                    height: 6rem;
+                }
+                & .product-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    & .image-gallery {
+                        display: flex;
+                        justify-content: center;
+                        & > img {
+                            width: 20%;
+                        }
+                    }
+
+                    & .shoe-name {
+                        color: $banner-background-color;
+                        font-size: 0.8rem;
+                        margin-top: 1rem;
+                        font-weight: 500;
+                    }
+                    & .shoe-price {
+                        color: $banner-background-color;
+                        padding: 1rem;
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                        margin-top: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    main {
+        & .down-section {
+            margin-left: 2rem;
+            & .complete-look-title {
+                color: $banner-background-color;
+                margin: 1rem 0 1rem 0;
+                padding: 0.2rem;
+                background-color: #e7e6e2;
+            }
+            & .complete-look-products-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: flex-end;
+                gap: 0.2rem;
+                justify-content: center;
+                margin: 0 0rem 0rem 0rem;
+                & .product {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    & a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                    & .product-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        & .image-gallery {
+                            display: flex;
+                            justify-content: center;
+                            // width: 20%;
+                            & > img {
+                                width: 20%;
+                            }
+                        }
+
+                        & .shoe-name {
+                            color: $banner-background-color;
+                            font-size: 0.8rem;
+                            margin-top: 1rem;
+                            font-weight: 500;
+                        }
+                        & .shoe-price {
+                            color: $banner-background-color;
+                            padding: 1rem;
+                            font-weight: bold;
+                            margin-bottom: 1rem;
+                            margin-top: 0rem;
+                        }
+                        & .shoe-addto-cart {
+                            padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+                            background-color: $banner-background-color;
+                            color: $banner-text-color;
+                            border: none;
+                            width: 80%;
+                            display: flex;
+                            justify-content: center;
+                            & > a {
+                                text-decoration: none;
+                                color: $banner-text-color;
+                                height: auto;
+                                text-align: center;
+                                font-weight: 600;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .recommended-products-title {
+                color: $banner-background-color;
+                border-bottom: solid 1px $banner-background-color;
+                margin: 2rem 0 1rem 0;
+            }
+            & .recommended-products-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: end;
+                justify-items: center;
+                & .product {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    & a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                    & .product-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        & .image-gallery {
+                            display: flex;
+                            justify-content: center;
+                            & > img {
+                                width: 20%;
+                            }
+                        }
+
+                        & .shoe-name {
+                            color: $banner-background-color;
+                            font-size: 0.8rem;
+                            margin-top: 1rem;
+                            font-weight: 500;
+                        }
+                        & .shoe-price {
+                            color: $banner-background-color;
+                            padding: 1rem;
+                            font-weight: bold;
+                            margin-bottom: 1rem;
+                            margin-top: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

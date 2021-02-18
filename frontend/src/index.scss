@@ -1,0 +1,25 @@
+@import './styles/navBar';
+@import './styles/productScreen';
+@import './styles/completeLook';
+@import './styles/socialMedia';
+@import './styles/footer';
+@import './styles/fonts';
+@import './styles/cardScreen';
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: #fff;
+  font-size: 16px;
+  font-weight:lighter;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}

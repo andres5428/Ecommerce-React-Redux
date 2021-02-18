@@ -1,0 +1,38 @@
+$social-media-background: #e7e6e2;
+$social-media-icons-color: #676665;
+main {
+    & .social-media-container {
+        margin: 2rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: $social-media-background;
+
+        & .social-media-title {
+            color: $social-media-icons-color;
+            position: relative;
+            padding: 0 0 0.8rem 0;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 50%;
+                border-bottom: 2px solid $social-media-icons-color;
+                transform: translate(50%);
+            }
+        }
+        & .social-icons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            & > i {
+                padding: 0.5rem;
+                color: $social-media-icons-color;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

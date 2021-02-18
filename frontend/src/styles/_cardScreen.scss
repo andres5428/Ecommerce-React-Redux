@@ -1,0 +1,110 @@
+$hover-color: #705be7;
+$banner-background-color: #7a4a58;
+main {
+    & .cart-screen {
+        display: flex;
+        max-width: 1300px;
+        & > h2 {
+            margin-bottom: 1rem;
+        }
+
+        & .cartscreen-left {
+            flex: 0.7;
+            margin-right: 1rem;
+            background-color: transparent;
+            padding: 1rem;
+            & > h2 {
+                margin-top: 1rem;
+            }
+            & > div {
+                margin-top: 2rem;
+                & > a {
+                    // text-decoration: none;
+                    color: $banner-background-color;
+                    font-weight: 600;
+                    &:before{
+                        display: inline-block;
+                        content: "";
+                        width: 0.3rem;
+                    }
+                }
+            }
+            & .cartitem {
+                width: 100%;
+                padding: 1rem;
+                margin-bottom: 0.5rem;
+                display: grid;
+                grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+                gap: 0.5rem;
+                background: #fff;
+                border-radius: 2px;
+                place-items: center;
+
+                & .cartitem-name {
+                    text-decoration: none;
+                    color: #7a4a58;
+
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+
+                & .cartitem-select {
+                    padding: 10px 17px;
+                }
+
+                & .cartitem-deletebtn {
+                    padding: 10px 17px;
+                    color: red;
+                    background: #f4f4f4;
+                    border: solid 1px #171717;
+                    cursor: pointer;
+                    transition: all 0.3s ease-out;
+
+                    &:hover,
+                    :focus,
+                    :active {
+                        background: $hover-color;
+                        color: #f4f4f4;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        & .cartscreen-right {
+            flex: 0.3;
+            background: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            height: fit-content;
+
+            & div {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                padding: 1rem;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            & .cartscreen-info {
+                & p {
+                    padding: 0.5rem;
+                }
+            }
+
+            & div button {
+                padding: 0.625rem 1.06rem;
+                width: 100%;
+                background: #171717;
+                color: #f4f4f4;
+                border: 1px solid #171717;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
